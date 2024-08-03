@@ -114,7 +114,7 @@ class ChatRouteArgs {
 class HomeRoute extends _i7.PageRouteInfo<HomeRouteArgs> {
   HomeRoute({
     _i8.Key? key,
-    String title = "hello",
+    String title = "Home Screen",
     List<_i7.PageRouteInfo>? children,
   }) : super(
           HomeRoute.name,
@@ -143,7 +143,7 @@ class HomeRoute extends _i7.PageRouteInfo<HomeRouteArgs> {
 class HomeRouteArgs {
   const HomeRouteArgs({
     this.key,
-    this.title = "hello",
+    this.title = "Home Screen",
   });
 
   final _i8.Key? key;
