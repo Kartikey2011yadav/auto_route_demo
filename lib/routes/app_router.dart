@@ -1,5 +1,6 @@
 
 import 'package:auto_route/auto_route.dart';
+import 'package:auto_route_demo/routes/guard/auth_guard.dart';
 import 'app_router.gr.dart';
 
 @AutoRouterConfig()
@@ -12,7 +13,8 @@ class AppRouter extends RootStackRouter{
     AutoRoute(page: ChatRoute.page, path: "/chat"),
     AutoRoute(page: NotificationRoute.page, path: "/notification"),
     AutoRoute(page: ProfileRoute.page, path: "/profile"),
-    AutoRoute(page: SearchRoute.page, path: "/search"),
+    AutoRoute(page: SearchRoute.page, path: "/search", guards: [AuthGard()]),
+    AutoRoute(page: Login.page, path: "/login")
   ];
 
 }
