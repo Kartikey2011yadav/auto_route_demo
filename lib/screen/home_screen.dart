@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 @RoutePage()
 class HomePage extends StatefulWidget {
-  HomePage({super.key, this.title= "hello"});
+  HomePage({super.key, this.title = "Home Screen"});
 
   String title;
 
@@ -27,8 +27,9 @@ class _MyHomePageState extends State<HomePage> {
         title: Text(widget.title),
         backgroundColor: Colors.blueAccent,
         actions: [
-          IconButton(onPressed: (){}, icon: const Icon(Icons.notification_add)),
-          IconButton(onPressed: (){}, icon: const Icon(Icons.chat)),
+          IconButton(
+              onPressed: () {}, icon: const Icon(Icons.notification_add)),
+          IconButton(onPressed: () {}, icon: const Icon(Icons.chat)),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
